@@ -1,0 +1,13 @@
+set initmode=gn
+gnmap  FF <easyclick><click_left>
+gnmap <alt-tab> <switch_window><gridmove><easyclick><click_left>
+imap <esc> <to_edi_normal>
+evmap <esc> <to_edi_normal>
+gvmap <esc> <to_gui_normal>
+rmap <esc> <to_gui_normal>
+set r=<to_resident>
+set gn=<to_gui_normal>
+set gv=<to_gui_visual>
+set en=<to_gui_normal>
+set ev=<to_gui_visual>
+set i=<to_insert>
