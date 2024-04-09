@@ -1,20 +1,38 @@
+"----
+"初始化gui层
+"----
 set initmode=gn
-gnmap  FF <easyclick><click_left>
-gnmap <alt-tab> <switch_window><gridmove><easyclick><click_left>
 
-imap <esc> <to_edi_normal>
+gnmap  FF <easyclick><click_left>
+imap FF <easyclick><click_left>
+"gnmap <alt-tab> <switch_window><gridmove><easyclick><click_left>
+"imap <alt-tab> <switch_window><gridmove><easyclick><click_left>
+"enmap <alt-tab> <switch_window><gridmove><easyclick><click_left>
 "-----
 "退出视图层
 "-----
 evmap <esc> <to_edi_normal>
 gvmap <esc> <to_gui_normal>
-
+"-----
+"视图层，编辑层，插入层的映射关系
+"-----
 rmap <esc> <to_gui_normal>
 enmap <esc> <to_gui_normal>
 gnmap <esc> <to_edi_normal>
-set r=<to_resident>
-set gn=<to_gui_normal>
-set gv=<to_gui_visual>
-set en=<to_gui_normal>
-set ev=<to_gui_visual>
-set i=<to_insert>
+imap <esc> <to_edi_normal>
+
+
+set gridmove_fontsize=16
+set gridmove_fontweight=650
+set gridmove_fontname="FiraCode Nerd Font"
+set gridmove_fontcolor= #005f00
+set gridmove_bgcolor=#afd700
+
+set shell = cmd
+set cmd_fontsize = 25
+set cmd_fadeout=10000 
+set cmd_maxchar = 100
+set cmd_fontcolor = #005f00
+set cmd_bgcolor = #afd700
+set cmd_fontname = FiraCode Nerd Font
+set cmd_fontweight = 1000
