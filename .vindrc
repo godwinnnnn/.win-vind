@@ -1,10 +1,17 @@
 set initmode=gn
 gnmap  FF <easyclick><click_left>
 gnmap <alt-tab> <switch_window><gridmove><easyclick><click_left>
+
 imap <esc> <to_edi_normal>
+"-----
+"退出视图层
+"-----
 evmap <esc> <to_edi_normal>
 gvmap <esc> <to_gui_normal>
+
 rmap <esc> <to_gui_normal>
+enmap <esc> <to_gui_normal>
+gnmap <esc> <to_edi_normal>
 set r=<to_resident>
 set gn=<to_gui_normal>
 set gv=<to_gui_visual>
