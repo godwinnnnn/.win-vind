@@ -2,12 +2,17 @@
 "初始化gui层
 "----
 set initmode=gn
-
+"----
+"功能
+"----
 gnmap  FF <easyclick><click_left>
-imap FF <easyclick><click_left>
+enmap FF <easyclick><click_left>
 "gnmap <alt-tab> <switch_window><gridmove><easyclick><click_left>
 "imap <alt-tab> <switch_window><gridmove><easyclick><click_left>
 "enmap <alt-tab> <switch_window><gridmove><easyclick><click_left>
+gnmap <a-tab> <switch_window>
+gnmap <c-w> <close_current_window>
+
 "-----
 "退出视图层
 "-----
@@ -16,12 +21,19 @@ gvmap <esc> <to_gui_normal>
 "-----
 "视图层，编辑层，插入层的映射关系
 "-----
-rmap <esc> <to_gui_normal>
+"rmap <esc> <to_gui_normal>
 enmap <esc> <to_gui_normal>
 gnmap <esc> <to_edi_normal>
 imap <esc> <to_edi_normal>
-
-
+"-----
+" resident 模式与视图模式和编辑模式的转换
+"-----
+gnmap <a-r> <to_resident>
+enmap  <a-r> <to_resident>
+rmap <a-r> <to_gui_normal>
+"-----
+"css
+"-----
 set gridmove_fontsize=16
 set gridmove_fontweight=650
 set gridmove_fontname="FiraCode Nerd Font"
@@ -36,3 +48,7 @@ set cmd_fontcolor = #005f00
 set cmd_bgcolor = #afd700
 set cmd_fontname = FiraCode Nerd Font
 set cmd_fontweight = 1000
+
+
+
+
