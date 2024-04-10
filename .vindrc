@@ -12,7 +12,7 @@ enmap FF <easyclick><click_left>
 "enmap <alt-tab> <switch_window><gridmove><easyclick><click_left>
 gnmap <a-tab> <switch_window>
 gnmap <c-w> <close_current_window>
-
+set wq=<save><close_current_window>
 "-----
 "退出视图层
 "-----
@@ -42,7 +42,7 @@ set gridmove_bgcolor=#afd700
 
 set shell = cmd
 set cmd_fontsize = 25
-set cmd_fadeout=10000 
+set cmd_fadeout=86400
 set cmd_maxchar = 100
 set cmd_fontcolor = #005f00
 set cmd_bgcolor = #afd700
